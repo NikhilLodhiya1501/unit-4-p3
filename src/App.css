@@ -1,0 +1,29 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #0d1324; color: #e9edff; font-family: Arial, sans-serif; }
+.lab { max-width: 1200px; margin: auto; padding: 28px; min-height: 100vh; }
+.lab header { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; align-items: center; padding-bottom: 25px; border-bottom: 1px solid #ffffff20; }
+.lab-logo { font-size: 24px; font-weight: 900; letter-spacing: 2px; }
+.lab-logo span, .lab-card h1 span { color: #5de1ce; }
+.lab-badge, .tag { color: #5de1ce; letter-spacing: 2px; font-size: 10px; }
+.lab-grid { display: grid; grid-template-columns: 220px 1fr; gap: 28px; margin-top: 35px; }
+.lab-grid aside { background: #171f35; border-radius: 15px; padding: 20px; }
+.lab-grid aside p { color: #818ba8; font-size: 11px; letter-spacing: 2px; }
+.lab-grid aside div { padding: 14px 10px; color: #b7c0d9; border-radius: 8px; font-size: 13px; }
+.lab-grid aside .selected { background: #21443f; color: #5de1ce; }
+.lab-nav { display: flex; gap: 10px; margin-bottom: 20px; }
+.lab-nav a { color: #b8c3df; text-decoration: none; padding: 10px 16px; border: 1px solid #303b54; border-radius: 9px; }
+.lab-nav a.active { background: #5de1ce; color: #0d1324; }
+.lab-card { padding: 35px; border-radius: 18px; background: linear-gradient(135deg, #202a47, #161b30); min-height: 320px; }
+.big-icon { font-size: 38px; color: #5de1ce; }
+.lab-card h1 { font-size: clamp(30px, 5vw, 48px); margin: 15px 0; }
+.lab-card > p:not(.tag) { color: #b4bed6; line-height: 1.7; }
+.code-preview { padding: 15px; margin-top: 25px; background: #0b1020; border: 1px solid #394561; border-radius: 9px; color: #5de1ce; overflow-wrap: anywhere; }
+.comparison { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
+.comparison div { padding: 17px; background: #171f35; border-radius: 12px; }
+.comparison p { color: #9ba8c4; font-size: 12px; line-height: 1.5; }
+.lab footer { text-align: center; color: #77829e; padding: 35px 0 10px; font-size: 10px; letter-spacing: 2px; }
+@media(max-width:700px) {
+  .lab-grid { grid-template-columns: 1fr; }
+  .comparison { grid-template-columns: 1fr; }
+}
